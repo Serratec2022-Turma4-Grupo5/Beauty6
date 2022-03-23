@@ -292,7 +292,7 @@ programa
 		Util.aguarde(2500)
 		escreva("\t\t\t\t\t")escreva("   Deseja continuar e efetuar o login?")escreva("\n\n")
 		escreva("\t\t\t\t\t\t")escreva("[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
-		escreva("\t\t\t\t\t\t\t   ")]
+		escreva("\t\t\t\t\t\t\t   ")
 		bem_vindo()
 	}
 
@@ -369,7 +369,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 5389; 
+ * @POSICAO-CURSOR = 7554; 
  * @DOBRAMENTO-CODIGO = [9, 208, 214, 236, 343];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
