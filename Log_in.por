@@ -1,11 +1,11 @@
 programa
 {
 	inclua biblioteca Util
-	cadeia loguin[] = {"adminMaster","admin1", "admin2", "admin3", "admin4", "admin5", "admin6"},
-		   senha[] = {"adminMaster","admin1", "admin2", "admin3", "admin4", "admin5", "admin6"}, log, passw
+	cadeia loguin[] = {"adminMaster","Charlles", "Flavio", "Isabel", "Rosana", "Gabriel", "Vinicius"},
+		   senha[] = {"adminMaster","#2019@", "valeu", "123", "#abc123#", "backend", "drunk"}, log, passw
 
 	cadeia usuarios[] = {"André", "João", "Marcos"}
-	inteiro continuar, resp, i
+	inteiro continuar, resp, i, sair
 
 	funcao Perfumaria(){
 		inteiro num, qtd, j
@@ -260,7 +260,7 @@ programa
 	funcao in_log()
 	{
 		limpa()
-		escreva("\t\t\t\t\t\t\t Bem vindo, " + loguin[i]+"!")escreva("\n\n")	
+		escreva("\t\t\t\t\t\t\t Olá, " + loguin[i]+"!")escreva("\n\n")	
 		escreva("\t\t\t\t\t\t\tDeseja acessar a loja?\n\n")
 		escreva("\t\t\t")escreva("\t\t\t\t[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
 		inteiro num
@@ -277,8 +277,8 @@ programa
 	}
 
 	funcao termino(){
-		escreva("Obrigado por acessar nosso sistema!!")
-		escreva("Volte sempre")
+		escreva("Obrigado por acessar nosso sistema!!\n")
+		escreva("Volte sempre!")
 	}
 
 	funcao in_log_master()
@@ -295,16 +295,32 @@ programa
 		escreva("\t\t\t\t\t")escreva("   Deseja continuar e efetuar o login?")escreva("\n\n")
 		escreva("\t\t\t\t\t\t")escreva("[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
 		escreva("\t\t\t\t\t\t\t   ")
-		bem_vindo()
+		leia(continuar)
+		escolha(continuar)
+		{
+			caso 1: log_in()
+			pare
+
+			caso 2: 
+			escreva ("\n\t\t\t\t\t\tQue pena! Volte sempre!")
+			// aqui poderia entrar a logo novamente 
+			pare
+
+			caso contrario:
+			
+		}
 	}
 
 	funcao loja(){
+		escreva ("Olá, " + loguin[i]+"!\n")
 		escreva("\t\t\t\t\t")escreva("Deseja acessar os setores de Maquiagem, Perfumaria ou Cabelo? ")escreva("\n")
 		Util.aguarde(2500)
 		escreva("\t\t\t\t\t")escreva(" ")escreva("\n")
 		escreva("\t")escreva("\t\t\t  [1] Maquiagens")escreva("\t\t")escreva("[2] Perfumaria")escreva("\t\t [3] Tratamento de Cabelo")escreva("\n")
-		//escreva("\t\t\t\t\t\t\t   ")
+		escreva("\t\t\t\t\t\t\t   ")
+		opcao_sair()
 		escolhaLoja()
+		limpa()
 	}
 
 	funcao escolhaLoja(){
@@ -328,18 +344,7 @@ programa
 	
 	funcao bem_vindo()
 	{
-		leia(continuar)
-		escolha(continuar)
-		{
-			caso 1: log_in()
-			pare
-
-			caso 2: // aqui poderia entrar a logo novamente 
-			pare
-
-			caso contrario:
-			
-		}
+	
 		
 	}
 
@@ -362,8 +367,20 @@ programa
 			leia (opcao_adm)
 			limpa()
 		}
+		
+	}
+	funcao opcao_sair(){
+		escreva("\n\n[0] Para sair da loja")escreva("\n\n")
+		leia (sair)
+		escolha(sair)
+		{
+			caso 1: log_in()
+			pare
+		}
+
 	}
 }
+
 
 	
 /* $$$ Portugol Studio $$$ 
@@ -371,13 +388,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
-<<<<<<< HEAD
- * @POSICAO-CURSOR = 6883; 
- * @DOBRAMENTO-CODIGO = [9, 236, 345];
-=======
- * @POSICAO-CURSOR = 7554; 
- * @DOBRAMENTO-CODIGO = [9, 208, 214, 236, 343];
->>>>>>> e4c0884396a3c9dcc57421168a19eaaf3932a511
+ * @POSICAO-CURSOR = 9332; 
+ * @DOBRAMENTO-CODIGO = [9, 76, 142, 208, 214, 236, 259, 278, 283, 325, 344, 350];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
