@@ -260,11 +260,13 @@ programa
 	funcao in_log()
 	{
 		limpa()
-		escreva("\t\tBem vindo, " + loguin[i]+"!")escreva("\n\n")	
-		escreva("\t\tDeseja acessar a loja?")
-		escreva("\t")escreva("[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
+		escreva("\t\t\t\t\t\t\t Bem vindo, " + loguin[i]+"!")escreva("\n\n")	
+		escreva("\t\t\t\t\t\t\tDeseja acessar a loja?\n\n")
+		escreva("\t\t\t")escreva("\t\t\t\t[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
 		inteiro num
+		escreva("\t\t\t\t\t\t\t\t--> ")
 		leia(num)
+		limpa()
 		escolha(num){
 			caso 1: loja()
 				pare
@@ -288,20 +290,20 @@ programa
 	}
 
 	funcao menu(){
-		escreva("\t\t\t\t\t\t")escreva("Bem vindo(a) a Beauty6!")escreva("\n\n")
+		escreva("\t\t\t\t\t\t")escreva("Bem vindo(a) a Beauty6™!")escreva("\n\n")
 		Util.aguarde(2500)
 		escreva("\t\t\t\t\t")escreva("   Deseja continuar e efetuar o login?")escreva("\n\n")
 		escreva("\t\t\t\t\t\t")escreva("[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
-		escreva("\t\t\t\t\t\t\t   ")]
+		escreva("\t\t\t\t\t\t\t   ")
 		bem_vindo()
 	}
 
 	funcao loja(){
-		escreva("\t\t\t\t\t\t")escreva("Deseja acessar os setores de Maquiagem, Perfumaria ou Cabelo")escreva("\n\n")
+		escreva("\t\t\t\t\t")escreva("Deseja acessar os setores de Maquiagem, Perfumaria ou Cabelo? ")escreva("\n")
 		Util.aguarde(2500)
-		escreva("\t\t\t\t\t")escreva(" ")escreva("\n\n")
-		escreva("\t")escreva("[1] Maquiagens")escreva("\t\t")escreva("[2] Perfumaria")escreva("[3] Tratamento de Cabelo")escreva("\n")
-		escreva("\t\t\t\t\t\t\t   ")]
+		escreva("\t\t\t\t\t")escreva(" ")escreva("\n")
+		escreva("\t")escreva("\t\t\t  [1] Maquiagens")escreva("\t\t")escreva("[2] Perfumaria")escreva("\t\t [3] Tratamento de Cabelo")escreva("\n")
+		//escreva("\t\t\t\t\t\t\t   ")
 		escolhaLoja()
 	}
 
@@ -369,8 +371,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 5389; 
- * @DOBRAMENTO-CODIGO = [9, 208, 214, 236, 343];
+ * @POSICAO-CURSOR = 6883; 
+ * @DOBRAMENTO-CODIGO = [9, 236, 345];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
