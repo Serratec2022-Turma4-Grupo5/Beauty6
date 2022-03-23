@@ -9,8 +9,9 @@ programa
 
 	funcao Perfumaria(){
 		inteiro num, qtd, j
-		real auxperfumaria, total=0
+		real auxperfumaria, total=0.0
 		logico bool = verdadeiro
+		caracter esc
 		
 		escreva("==========PERFUMARIA==========\n")
 		escreva("[1] - Sabonete R$ 5.00\n")
@@ -64,7 +65,8 @@ programa
           caso contrario:
                     escreva("Opção inválida")   
 		 }
-		escreva("\nDeseja continuar comprando?")
+		escreva("\nDeseja continuar comprando? Digite: ")
+		escreva("[S] Sim 	[N] Não\n")
 		leia(esc)
 		se(esc=='N'){
 			bool = falso
@@ -76,6 +78,7 @@ programa
 		inteiro num, qtd, j
 		real auxcabelo, total=0
 		logico bool = verdadeiro
+		caracter esc
 		
 		escreva("=============CABELO=============\n")
 		escreva("[1] - Shampoo R$ 5.00\n")
@@ -127,7 +130,8 @@ programa
           caso contrario:
                     escreva("Opção inválida")   
 		 }
-		escreva("\nDeseja continuar comprando?")
+		escreva("\nDeseja continuar comprando? Digite: ")
+		escreva("[S] Sim 	[N] Não\n")
 		leia(esc)
 		se(esc=='N'){
 			bool = falso
@@ -136,7 +140,7 @@ programa
 		}
 	}
 
-	funcao maquiagem(){
+	funcao Maquiagem(){
 		inteiro num, qtd, j
 		real auxmaquiagem, total=0
 		logico bool = verdadeiro
@@ -193,12 +197,12 @@ programa
           caso contrario:
                     escreva("Opção inválida")   
 		}
-		escreva("\nDeseja continuar comprando?")
+		escreva("\nDeseja continuar comprando? Digite: ")
+		escreva("[S] Sim 	[N] Não\n")
 		leia(esc)
-		se(esc=='N'){
+		se(esc=='N' ou esc=='n'){
 			bool = falso
 			}
-		
 		}
 	}
 	
@@ -207,7 +211,7 @@ programa
 		menu()
 		
 	}
-
+	
 	funcao log_in()
 	{
 		limpa()
@@ -256,7 +260,23 @@ programa
 	funcao in_log()
 	{
 		limpa()
-		escreva("Bem vindo, " + loguin[i]+"!")escreva("\n\n")	
+		escreva("\t\tBem vindo, " + loguin[i]+"!")escreva("\n\n")	
+		escreva("\t\tDeseja acessar a loja?")
+		escreva("\t")escreva("[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
+		inteiro num
+		leia(num)
+		escolha(num){
+			caso 1: loja()
+				pare
+			caso 2: termino()
+				pare
+			
+		}
+	}
+
+	funcao termino(){
+		escreva("Obrigado por acessar nosso sistema!!")
+		escreva("Volte sempre")
 	}
 
 	funcao in_log_master()
@@ -268,18 +288,44 @@ programa
 	}
 
 	funcao menu(){
-		escreva("\t\t\t\t\t\t")escreva("Bem vindo(a) a Beaty6!")escreva("\n\n")
+		escreva("\t\t\t\t\t\t")escreva("Bem vindo(a) a Beauty6!")escreva("\n\n")
 		Util.aguarde(2500)
 		escreva("\t\t\t\t\t")escreva("   Deseja continuar e efetuar o login?")escreva("\n\n")
 		escreva("\t\t\t\t\t\t")escreva("[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
 		escreva("\t\t\t\t\t\t\t   ")]
 		bem_vindo()
 	}
+
+	funcao loja(){
+		escreva("\t\t\t\t\t\t")escreva("Deseja acessar os setores de Maquiagem, Perfumaria ou Cabelo")escreva("\n\n")
+		Util.aguarde(2500)
+		escreva("\t\t\t\t\t")escreva(" ")escreva("\n\n")
+		escreva("\t")escreva("[1] Maquiagens")escreva("\t\t")escreva("[2] Perfumaria")escreva("[3] Tratamento de Cabelo")escreva("\n")
+		escreva("\t\t\t\t\t\t\t   ")]
+		escolhaLoja()
+	}
+
+	funcao escolhaLoja(){
+		inteiro continue
+		leia(continue)
+		escolha(continue)
+		{
+			caso 1: Maquiagem()
+			pare
+
+			caso 2: Perfumaria()
+			pare
+
+			caso 3: Cabelo()
+			pare
+
+			caso contrario: menu()
+			
+		}
+	}
 	
 	funcao bem_vindo()
 	{
-		
-		
 		leia(continuar)
 		escolha(continuar)
 		{
@@ -314,31 +360,6 @@ programa
 			leia (opcao_adm)
 			limpa()
 		}
-
-		escolha (opcao_adm)
-		{
-			
-			caso 1:
-
-			pare
-
-			caso 2:
-
-			pare
-
-			caso 3:
-
-			pare
-
-			caso 4:
-
-			pare
-
-			caso 5:
-
-			pare
-		}
-		
 	}
 }
 
@@ -348,8 +369,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 411; 
- * @DOBRAMENTO-CODIGO = [204, 210, 232, 255, 261, 269, 278, 297];
+ * @POSICAO-CURSOR = 5389; 
+ * @DOBRAMENTO-CODIGO = [9, 208, 214, 236, 343];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
