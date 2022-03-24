@@ -4,6 +4,9 @@ Seja muito bem vindo a nossa loja<br>
 Aqui você encontra a melhor marca com qualidade DevS Professionals<br>
 Venha conhecer nossas seções de Maquiagem, Perfumaria e Tratamentos para Cabelo</h2>
 
+\_________________________________________________________________________________________
+Espaço para logo
+\_________________________________________________________________________________________
 
 
 <h1 align=center> Sobre nós </h1>
