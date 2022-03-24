@@ -122,12 +122,43 @@ programa
 		escreva("\t\t\t\t\t\t")escreva("   O que deseja fazer?")escreva("\n\n")
 		adm()
 	}
+	
 	funcao bem_vindo_b6(){
-		escreva("\t\t\t\t\t\t")escreva("Bem vindo(a) a Beauty6™!")escreva("\n\n")
+			
+	
+	
+	
+    escreva("  Beauty6™\t\tBeauty6™\t\tBeauty6™\t\tBeauty6™\t\tBeauty6™\t\tBeauty6™\n\n\n")   Util.aguarde(200) 
+		escreva("\t\t       ")escreva("      @@@@@@@@@@@@@@@@@@@@@@@%,                      \t       @@@@@@@@@@@@@@@@@@@ \n")  Util.aguarde(100)    
+		escreva("\t\t       ")escreva("	  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@.                      @@@@@@@@@ \n")   Util.aguarde(100)    
+		escreva("\t\t       ")escreva("	  @@@@@@@@&*@@@@@@@@@@@@@@@@@@@@@,                 @@@@@@@ \n")  Util.aguarde(100)     
+		escreva("\t\t       ")escreva("	  @@@@@@@@&*@@@@@@@@@@@@@@@@@..@@@@@*           @@@@@@@ \n")   Util.aguarde(100)    
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@         &@@@@@@ @@@@@          @@@/%@@      \n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@            @@@@@ &@@@@         @@@/%@@     \n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@             .@@@@ @@@@%        @@@/%@@      \n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@              @@@@#(@@@@        @@@/%@@      \n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@              @@@@#*@@@@        @@@/%@@        @@@@@@@@@@@@@@@@@\n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@    @@@@#* @@@@  ,              @@@/%@@      @@@               @@\n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@    @@@@@ @@@@@  ,               @@@/%@@@   @@@               @@@ \n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@              @@@@#*@@@@          @@@@/%@@@@@@               @@@ \n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@              @@@@*&@@@@           @@@@/%@@@@@              @@@\n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@             @@@@@ @@@@             @@@@/%@@@@@           @@@\n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	      @@@@&*@@@@           @@@@@# @@@@*               @@@@/%@@@@@        @@@\n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("     &@@@@&*@@@@&&&&&@@@@@@@@@% @@@@@   \t                &&&&@@@@@@@@@@@@@@@\n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	  @@@@@@@@&*@@@@@@@@@@@@@@@. @@@@@@*                     @@@@@@@@@/%@@@@@@@@@ \n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	  @@@@                 &@@@@@@@@@                        @@@@@          @@@@@ \n")      Util.aguarde(100) 
+		escreva("\t\t       ")escreva("	  @@@@@@@@@@@@@@@@@@@@@@@@@@@                            &@@@@@@@@@@@@@@@@@@@ \n\n\n")   Util.aguarde(100)
+		//escreva("	  \t\t\t\t\t\t   BEM VNDO A BEAUTYSIX")   Util.aguarde(200)  
+		Util.aguarde(1000)
+		
+	
+
+
+		escreva("\t\t\t\t\t\t")escreva("\tBem vindo(a) a Beauty6™!")escreva("\n\n")
 		Util.aguarde(1500)
-		escreva("\t\t\t\t\t")escreva("   Deseja continuar e efetuar o login?")escreva("\n\n")
-		escreva("\t\t\t\t\t\t")escreva("[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
-		escreva("\t\t\t\t\t\t\t--> ")leia(continuar)
+		escreva("\t\t\t\t\t")escreva("\t   Deseja continuar e efetuar o login?")escreva("\n\n")
+		escreva("\t\t\t\t\t\t")escreva("\t[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
+		escreva("\t\t\t\t\t\t\t\t--> ")leia(continuar)
 		escolha(continuar)
 		{
 			caso 1: log_in()
@@ -698,8 +729,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3894; 
- * @DOBRAMENTO-CODIGO = [9, 14, 19, 24, 38, 42, 64, 87, 113, 117, 124, 157, 183, 188, 267, 293];
+ * @POSICAO-CURSOR = 2987; 
+ * @DOBRAMENTO-CODIGO = [9, 14, 19, 24, 38, 42, 64, 87, 113, 188, 214, 219, 298, 324];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
