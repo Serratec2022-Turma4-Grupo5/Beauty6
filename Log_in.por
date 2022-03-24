@@ -3,8 +3,6 @@ programa
 	inclua biblioteca Util
 	cadeia loguin[] = {"adminMaster","Charlles", "Flavio", "Isabel", "Rosana", "Gabriel", "Vinicius"},
 		   senha[] = {"adminMaster","#2019@", "valeu", "123", "#abc123#", "backend", "drunk"}, log, passw
-
-
 	cadeia usuarios[] = {" ", " ", " "," ", " ", " ", " ", " "}
 	inteiro continuar, resp, i, sair
 
@@ -37,212 +35,11 @@ programa
 			escreva("\t")
 		}
 	}
-		
-	funcao Perfumaria(){
-		inteiro num, qtd, j
-		real auxperfumaria, total=0.0
-		logico bool = verdadeiro
-		caracter esc
-		
-		escreva("==========PERFUMARIA==========\n")
-		escreva("[1] - Sabonete R$ 5.00\n")
-		escreva("[2] - Desodorante R$ 3.00\n")
-		escreva("[3] - Hidratante R$ 2.50\n")
-		escreva("[4] - Sabonete líquido R$ 3.50\n")
-		escreva("[5] - Perfume R$ 4.50\n")
 
-		para(j = 0; j < 30; j++){
-			escreva("=")
-		}
-		 escreva("\n")
-
-		enquanto(bool){
-			
-		
-		escreva("Entre com o número do item: ")
-		leia(num)
-
-		escolha(num){
-		caso 1:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 5.00)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso 2:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 3.00)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso 3:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 2.50)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso 4:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 3.50)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso 5:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 4.50)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso contrario:
-                    escreva("Opção inválida")   
-		 }
-		escreva("\nDeseja continuar comprando? Digite: ")
-		escreva("[S] Sim 	[N] Não\n")
-		leia(esc)
-		se(esc=='N'){
-			bool = falso
-		}
-	 }
-	}
-
-	funcao Cabelo(){
-		inteiro num, qtd, j
-		real auxcabelo, total=0
-		logico bool = verdadeiro
-		caracter esc
-		
-		escreva("=============CABELO=============\n")
-		escreva("[1] - Shampoo R$ 5.00\n")
-		escreva("[2] - Condicionador R$ 3.00\n")
-		escreva("[3] - Creme de pentear R$ 2.50\n")
-		escreva("[4] - Creme de hidratação R$ 3.50\n")
-		escreva("[5] - Óleo capilar R$ 4.50\n")
-
-		para(j = 0; j < 32; j++){
-			escreva("=")
-		}
-		 escreva("\n")
-
-		enquanto(bool){
-		escreva("Entre com o número do item: ")
-		leia(num)
-
-		escolha(num){
-		caso 1:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 5.00)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso 2:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 3.00)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso 3:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 2.50)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso 4:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 3.50)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso 5:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 4.50)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso contrario:
-                    escreva("Opção inválida")   
-		 }
-		escreva("\nDeseja continuar comprando? Digite: ")
-		escreva("[S] Sim 	[N] Não\n")
-		leia(esc)
-		se(esc=='N'){
-			bool = falso
-			}
-		
-		}
-	}
-
-	funcao Maquiagem(){
-		inteiro num, qtd, j
-		real auxmaquiagem, total=0
-		logico bool = verdadeiro
-		caracter esc
-		
-		escreva("=========MAQUIAGEM==========\n")
-		escreva("[1] - Corretivo R$ 5.00\n")
-		escreva("[2] - Base R$ 3.00\n")
-		escreva("[3] - Batom R$ 2.50\n")
-		escreva("[4] - Rímel R$ 3.50\n")
-		escreva("[5] - Lápis de olho R$ 4.50\n")
-
-		para(j = 0; j < 28; j++){
-			escreva("=")
-		}
-		 escreva("\n")
-
-		enquanto(bool){
-
-		escreva("Entre com o número do item: ")
-		leia(num)
-			
-		escolha(num){
-		caso 1:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 5.00)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso 2:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 3.00)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso 3:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 2.50)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso 4:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 3.50)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso 5:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 4.50)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso contrario:
-                    escreva("Opção inválida")   
-		}
-		escreva("\nDeseja continuar comprando? Digite: ")
-		escreva("[S] Sim 	[N] Não\n")
-		leia(esc)
-		se(esc=='N' ou esc=='n'){
-			bool = falso
-			}
-		}
-	}
-	
 	funcao inicio()
 	{
-		menu()
-		
+		bem_vindo_b6()	
 	}
-	
 	funcao log_in()
 	{
 		limpa()
@@ -269,14 +66,14 @@ programa
 			escreva("\t\t\t\t\t\t")escreva(" ! USUÁRIO OU SENHA INCORRETOS !")escreva("\n\n")
 			escreva("\t\t\t\t\t\t\t")escreva("TENTAR NOVAMENTE?")escreva("\n\n")
 			escreva("\t\t\t\t\t\t\t")escreva("[1]Sim")escreva("\t") escreva("     [2]Não")escreva("\n\n")
-			escreva("\t\t\t\t\t\t\t\t ")leia(resp)
+			escreva("\t\t\t\t\t\t\t      --> ")leia(resp)
 			limpa()
 			escolha(resp)
 			{
 				caso 1: log_in()
 				pare
 
-				caso 2: menu()
+				caso 2: bem_vindo_b6()
 				pare
 
 				caso contrario: 
@@ -291,27 +88,33 @@ programa
 	funcao in_log()
 	{
 		limpa()
+		inteiro acessar
 		escreva("\t\t\t\t\t\t\t Olá, " + loguin[i]+"!")escreva("\n\n")	
 		escreva("\t\t\t\t\t\t\tDeseja acessar a loja?\n\n")
 		escreva("\t\t\t")escreva("\t\t\t\t[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
-		inteiro num
 		escreva("\t\t\t\t\t\t\t\t--> ")
-		leia(num)
+		leia(acessar)
 		limpa()
-		escolha(num){
+		escolha(acessar){
 			caso 1: loja()
-				pare
-			caso 2: termino()
-				pare
+			pare
 			
+			caso 2: termino()
+			pare
+				
+			caso contrario: enquanto (acessar !=1 ou acessar !=2)
+			{
+				limpa()
+				escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+				Util.aguarde(1000)
+				in_log()
+			}
 		}
 	}
-
 	funcao termino(){
-		escreva("Obrigado por acessar nosso sistema!!\n")
-		escreva("Volte sempre!")
+		escreva("Obrigado por acessar o sistema Beauty6!!\n")
+		escreva("Volte sempre!\n\n\n")
 	}
-
 	funcao in_log_master()
 	{
 		escreva("\t\t\t\t\t")escreva("! VOCÊ ESTÁ LOGADO COMO ADMINISTRADOR !")escreva("\n\n")
@@ -319,66 +122,70 @@ programa
 		escreva("\t\t\t\t\t\t")escreva("   O que deseja fazer?")escreva("\n\n")
 		adm()
 	}
-
-	funcao menu(){
+	funcao bem_vindo_b6(){
 		escreva("\t\t\t\t\t\t")escreva("Bem vindo(a) a Beauty6™!")escreva("\n\n")
-		Util.aguarde(2500)
+		Util.aguarde(1500)
 		escreva("\t\t\t\t\t")escreva("   Deseja continuar e efetuar o login?")escreva("\n\n")
 		escreva("\t\t\t\t\t\t")escreva("[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
-		escreva("\t\t\t\t\t\t\t   ")
-		leia(continuar)
+		escreva("\t\t\t\t\t\t\t--> ")leia(continuar)
 		escolha(continuar)
 		{
 			caso 1: log_in()
 			pare
 
 			caso 2: 
-			escreva ("\n\t\t\t\t\t\tQue pena! Volte sempre!")
-			// aqui poderia entrar a logo novamente 
+			limpa()
+			escreva ("\n\t\t\t\t\t\tQue pena! Volte sempre!")escreva("\n")
+
 			pare
 
-			caso contrario:
+			caso contrario: erro_bem_vindo_beauty6()
 			
 		}
 	}
-
 	funcao loja(){
 		escreva ("Olá, " + loguin[i]+"!\n")
-		escreva("\t\t\t\t\t")escreva("Deseja acessar os setores de Maquiagem, Perfumaria ou Cabelo? ")escreva("\n")
+		escreva("\t\t\t\t\t")escreva("Deseja acessar o setor de Maquiagem, Perfumaria ou Cabelo? ")escreva("\n")
 		Util.aguarde(2500)
 		escreva("\t\t\t\t\t")escreva(" ")escreva("\n")
-		escreva("\t")escreva("\t\t\t  [1] Maquiagens")escreva("\t\t")escreva("[2] Perfumaria")escreva("\t\t [3] Tratamento de Cabelo")escreva("\n")
+		escreva("\t")escreva("\t\t\t  [1] Maquiagem")escreva("\t\t")escreva("[2] Perfumaria")escreva("\t\t [3] Cabelo")escreva("\n")
 		escreva("\t\t\t\t\t\t\t   ")
-		opcao_sair()
 		escolhaLoja()
 		limpa()
-	}
 
+
+	}
 	funcao escolhaLoja(){
 		inteiro continue
-		leia(continue)
+		escreva("\n\n")escreva("\t\t\t\t\t\t\t       -->  ")leia(continue)
 		escolha(continue)
 		{
-			caso 1: Maquiagem()
+			caso 0: limpa() termino_ou_log_in() 
 			pare
-
-			caso 2: Perfumaria()
-			pare
-
-			caso 3: Cabelo()
-			pare
-
-			caso contrario: menu()
 			
+			caso 1: limpa()  Maquiagem() 
+			pare
+
+			caso 2: limpa()  Perfumaria() 
+			pare
+
+			caso 3: limpa()  Cabelo() 
+			pare
+
+			caso contrario: 
+			enquanto(continue < 0 ou continue > 3)
+			{
+				limpa()
+				escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+				loja()				
+			}		
 		}
 	}
-	
-	funcao bem_vindo()
+	funcao logo_bem_vindo()
 	{
 	
 		
 	}
-
 	funcao adm()
 	{
 		inteiro opcao_adm
@@ -447,20 +254,442 @@ programa
 			}
 			
 		}
-		
-
-	funcao opcao_sair(){
-		escreva("\n\n[0] Para sair da loja")escreva("\n\n")
-		leia (sair)
-		escolha(sair)
+	funcao erro_bem_vindo_beauty6()
+	{
+		enquanto (continuar >=3 ou continuar <=0)
 		{
-			caso 1: log_in()
-			pare
+			limpa()
+			escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+			Util.aguarde(1000)
+			bem_vindo_b6()
+			
 		}
+	}
+	funcao termino_ou_log_in()
+	{
+		limpa()
+		inteiro confirmar
+		escreva("\t\t\t\t\t")escreva(" Deseja sair do sitema ou voltar para a tela de login?  ")escreva("\n\n")
+		escreva("\t\t\t\t\t\t   ")escreva("[1] Sair \t\t [2] Login")escreva("\n\n")
+		escreva("\t\t\t\t\t\t\t     --> ")leia(confirmar)
+		escolha(confirmar)
+		{
+			caso 1: termino()
+			pare
 
+			caso 2: log_in()
+			pare
+
+			caso contrario: 
+			enquanto (confirmar != 1 ou confirmar != 2)
+			{
+				limpa()
+				escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+				Util.aguarde(1000)
+				termino_ou_log_in()
+			}
+		}
+		
+	}
+	funcao Perfumaria(){
+		inteiro num, qtd, j
+		real auxperfumaria, total=0.0
+		logico bool = verdadeiro
+		caracter esc, duvida
+		
+		escreva("=============================PERFUMARIA======================================\n")
+		escreva("\nLinha DevS Professionals para Corpo e Banho - Essências de Extratos Naturais\n\n")
+		escreva("[1] Sabonete líquido Rosto e Corpo Flores do Mediterrâneo 300mL (R$ 31.99)\n")
+		escreva("[2] Sabonete em barra Esfoliante Flores da Amazônia 150g (R$ 55.99)\n")
+		escreva("[3] Antitranspirante Aerossol Aloe Vera 150mL (R$ 20.99)\n")
+		escreva("[4] Hidratante corporal Flores do Caribe 250 mL (R$ 56.90)\n")
+		escreva("[5] Body Splash Pós-Banho Lavanda da Grécia 200 mL (R$ 75.00)\n")
+		para(j = 0; j < 40; j++){
+			escreva("=")
+		}
+		 escreva("\n")
+
+		enquanto(bool){
+			
+		
+		escreva("Entre com o número do item: ")
+		leia(num)
+
+		escolha(num){
+		caso 1:
+		   escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Sabonete líquido à base de glicerina. \nPossui base vegetal, com extratos naturais do Mediterrâneo e uma fragrância duradoura e intensa.")
+		   	escreva("\nQuantidade no estoque: 89")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 31.99)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 31.99)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+          pare
+          caso 2:
+           escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Kit com seis sabonetes em barra para todos os tipos de pele. \nLimpa, esfolia e hidrata a pele para deixar um toque sedoso ao longo do dia. \nCom extratos naturais da flores da Amazônia, a fragrância é suave e duradoura.")
+		   	escreva("\nQuantidade no estoque: 74")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 55.99)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 55.99)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+          pare
+          caso 3:
+          escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Desodorante antitranspirante aerossol unissex sem perfume. \nHidrata as axilas com o poder do extrato de Aloe Vera. Garante proteção por até 48h do mau odor e da transpiração. \nCom ação antibacteriana.")
+		   	escreva("\nQuantidade no estoque: 55")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 20.99)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 20.99)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+          pare
+          caso 4:
+          	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		  	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Com extratos naturais do Caribe, garante uma hidratação e proteção para o corpo com ação antirresecamento para uma pele macia e perfumada.")
+		   	escreva("\nQuantidade no estoque: 85")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 56.90)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 56.90)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+          pare
+          caso 5:
+          	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		  	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Com extratos naturais do Mar Egeu, possui notas suaves de Lavanda com um perfume duradouro e relaxante.")
+		   	escreva("\nQuantidade no estoque: 67")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 75.00)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxperfumaria = (qtd * 75.00)
+               escreva("Total da compra: ", auxperfumaria)
+		   }
+          pare
+          caso contrario:
+                    escreva("Opção inválida")   
+		 }
+		escreva("\nDeseja continuar comprando? Digite: ")
+		escreva("[S] Sim 	[N] Não\n")
+		leia(esc)
+		se(esc=='N'){
+			bool = falso
+		}
+	 }
+	}
+
+	funcao Cabelo(){
+		inteiro num, qtd, j
+		real auxcabelo, total=0
+		logico bool = verdadeiro
+		caracter esc, duvida
+		escreva("========================CABELO===========================\n")
+		escreva("\nLinha DevS Professionals para Cabelos - Ultra Hidronutrição para Cabelos Danificados\n")
+		escreva("[1] Shampoo Óleo de Argan 500 mL (R$ 48.99)\n")
+		escreva("[2] Condicionador Óleo de Argan 300 mL (R$ 28.50)\n")
+		escreva("[3] Máscara de Hidratação Vitamina C 550g (R$ 62.99)\n")
+		escreva("[4] Creme de Pentear Maciez e Brilho 250 mL (R$ 20.90)\n")
+		escreva("[5] Óleo Capilar Argan e Coco 100 mL (R$ 34.90)\n")
+
+		para(j = 0; j < 32; j++){
+			escreva("=")
+		}
+		 	escreva("\n")
+
+		enquanto(bool){
+			escreva("Entre com o número do item: ")
+			leia(num)
+
+		escolha(num){
+		caso 1:
+			escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Shampoo para todos os tipos de cabelo. \nPromove maciez, brilho, sensação de frescor e limpeza profunda dos fios.")
+		   	escreva("\nQuantidade no estoque: 100")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 48.99)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 48.99)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+          pare
+          caso 2:
+		   escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Condicionador de tratamento de nutrição profunda para cabelos severamente ressecados. \nPenetra a fundo nos fios para promover maciez.")
+		   	escreva("\nQuantidade no estoque: 120")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 28.50)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 28.50)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+          pare
+          caso 3:
+		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Máscara para cabelos danificados, ressecados e tratados quimicamente. \nPromove um tratamento intensivo para nutrir e hidratar profundamente o cabelo.")
+		   	escreva("\nQuantidade no estoque: 95")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 62.99)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 62.99)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+          pare
+          caso 4:
+		  	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Creme de pentear para cabelos danificados ou quimicamente tratados. \nDesembaraça, protege e dê adeus ao frizz.")
+		   	escreva("\nQuantidade no estoque: 69")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 20.90)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 20.90)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+          pare
+          caso 5:
+          	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Óleo para todos os tipos de cabelo. \nPossui rápida absorção e fecha as cutículas capilares promovendo suavidade no toque.")
+		   	escreva("\nQuantidade no estoque: 125")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 34.90)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxcabelo = (qtd * 34.90)
+               escreva("Total da compra: ", auxcabelo)
+		   }
+		  
+          pare
+          caso contrario:
+                    escreva("Opção inválida")   
+		 }
+		escreva("\nDeseja continuar comprando? Digite: ")
+		escreva("[S] Sim 	[N] Não\n")
+		leia(esc)
+		se(esc=='N'){
+			bool = falso
+			}
+		
+		}
+	}
+
+
+	funcao Maquiagem(){
+		inteiro num, qtd, j
+		real auxmaquiagem, total=0
+		logico bool = verdadeiro
+		caracter esc, duvida
+		
+		escreva("=================MAQUIAGEM====================\n")
+		escreva("\nLinha DevS Professionals Makeup\n")
+		escreva("[1] Lápis de olho Pretão 1,5g (R$ 33.99) \n")
+		escreva("[2] Pó Iluminador Ilumina Geral 10g (R$ 79.99)\n")
+		escreva("[3] Rímel Extra Volume Sensacional 6g (R$ 49.99)\n")
+		escreva("[4] Paleta de Sombras 6 cores Tons Pasteis 24g (R$ 99.90)\n")
+		escreva("[5] Batom Líquido DevS Professionals Nude Matte 10mL (R$ 54.90)\n")
+
+		para(j = 0; j < 28; j++){
+			escreva("=")
+		}
+		 escreva("\n")
+
+		enquanto(bool){
+
+		escreva("Entre com o número do item: ")
+		leia(num)
+			
+		escolha(num){
+		caso 1:
+			escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Lápis de olho preto. Possui alta pigmentação e durabilidade.")
+		   	escreva("\nQuantidade no estoque: 88")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 33.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 33.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+          pare
+          caso 2:
+		   escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Pó iluminador mineral. Possui textura brilhante que deixa a pele linda e radiante.")
+		   	escreva("\nQuantidade no estoque: 133")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 79.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 79.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+          pare
+          caso 3:
+		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Máscara para cílios preta. Alonga e aumenta o volume com fórmula de longa duração e à prova d´água.")
+		   	escreva("\nQuantidade no estoque: 113")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 49.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 49.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+          pare
+          caso 4:
+		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Paleta de sombras em pó. Possui acabamentos cintilante para um look poderoso.")
+		   	escreva("\nQuantidade no estoque: 111")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 99.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 99.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+          pare
+          caso 5:
+		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
+		   se (duvida == 's')
+		   {
+		   	escreva("Batom líquido com acabamento matte. Possui alta intensidade, durabilidade de até 24h e poder hidratante.")
+		   	escreva("\nQuantidade no estoque: 103")
+		   	escreva("\nEntre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 59.90)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+		   senao {
+		   	escreva("Entre com a quantidade do item: ")
+		     leia(qtd)
+               auxmaquiagem = (qtd * 59.90)
+               escreva("Total da compra: ", total+=auxmaquiagem)
+		   }
+          pare
+          caso contrario:
+                    escreva("Opção inválida")   
+		}
+		escreva("\nDeseja continuar comprando? Digite: ")
+		escreva("[S] Sim 	[N] Não\n")
+		leia(esc)
+		se(esc=='N' ou esc=='n'){
+			bool = falso
+			}
+		}
 	}
   
- 	} 
+ } 
+ 
 
 
 	
@@ -469,18 +698,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
-<<<<<<< HEAD
- * @POSICAO-CURSOR = 586; 
- * @DOBRAMENTO-CODIGO = [38, 105, 171, 237, 243, 265, 288, 307, 312, 320, 329, 338, 360, 357];
-=======
-
- * @POSICAO-CURSOR = 679; 
- * @DOBRAMENTO-CODIGO = [9, 30, 97, 163, 229, 235, 257, 280, 299, 304, 312, 321, 330, 352, 349];
-
- * @POSICAO-CURSOR = 9332; 
- * @DOBRAMENTO-CODIGO = [9, 76, 142, 208, 214, 236, 259, 278, 283, 325, 344, 350];
-
->>>>>>> b1f3512f8384ae84742d6d65769e6bf259158f42
+ * @POSICAO-CURSOR = 3894; 
+ * @DOBRAMENTO-CODIGO = [9, 14, 19, 24, 38, 42, 64, 87, 113, 117, 124, 157, 183, 188, 267, 293];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
