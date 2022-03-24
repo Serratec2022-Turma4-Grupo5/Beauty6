@@ -4,7 +4,6 @@ programa
 	cadeia loguin[] = {"adminMaster","Charlles", "Flavio", "Isabel", "Rosana", "Gabriel", "Vinicius"},
 		   senha[] = {"adminMaster","#2019@", "valeu", "123", "#abc123#", "backend", "drunk"}, log, passw
 	inteiro continuar, resp, i, sair
-
 	
 	funcao inicio()
 	{
@@ -115,12 +114,16 @@ programa
 	}
 	funcao loja(){
 		escreva ("Olá, " + loguin[i]+"!\n")
-		escreva("[0] para sair.")
-		escreva("\t\t\t\t")escreva("Qual setor você deseja acessar: Maquiagem, Perfumaria ou Cabelo? ")escreva("\n")
-		Util.aguarde(1000)
-		escreva("\t\t\t\t\t ")escreva("\n")
-		escreva("\t\t\t\t  [1] Maquiagens")escreva("\t\t")escreva("[2] Perfumaria")escreva("\t\t [3] Tratamento de Cabelo")
-		escolhaLoja()		
+		escreva("\t\t\t\t\t")escreva("Deseja acessar o setor de Maquiagem, Perfumaria ou Cabelo? ")escreva("\n")
+		Util.aguarde(2500)
+		escreva("\t\t\t\t\t")escreva(" ")escreva("\n")
+		escreva("\t")escreva("\t\t\t  [1] Maquiagem")escreva("\t\t")escreva("[2] Perfumaria")escreva("\t\t [3] Cabelo")escreva("\n")
+		escreva("\t\t\t\t\t\t\t   ")
+		escolhaLoja()
+		opcao_sair() //dando erro neste lugar do escopo.
+		limpa()
+
+
 	}
 	funcao escolhaLoja(){
 		inteiro continue
@@ -224,7 +227,6 @@ programa
 		escreva("[3] Antitranspirante Aerossol Aloe Vera 150mL (R$ 20.99)\n")
 		escreva("[4] Hidratante corporal Flores do Caribe 250 mL (R$ 56.90)\n")
 		escreva("[5] Body Splash Pós-Banho Lavanda da Grécia 200 mL (R$ 75.00)\n")
-		
 		para(j = 0; j < 40; j++){
 			escreva("=")
 		}
@@ -343,11 +345,17 @@ programa
 		}
 	 }
 	}
+
 	funcao Cabelo(){
 		inteiro num, qtd, j
 		real auxcabelo, total=0
 		logico bool = verdadeiro
 		caracter esc, duvida
+
+		
+	
+
+
 		
 		escreva("========================CABELO===========================\n")
 		escreva("\nLinha DevS Professionals para Cabelos - Ultra Hidronutrição para Cabelos Danificados\n")
@@ -356,7 +364,7 @@ programa
 		escreva("[3] Máscara de Hidratação Vitamina C 550g (R$ 62.99)\n")
 		escreva("[4] Creme de Pentear Maciez e Brilho 250 mL (R$ 20.90)\n")
 		escreva("[5] Óleo Capilar Argan e Coco 100 mL (R$ 34.90)\n")
-		
+
 		para(j = 0; j < 32; j++){
 			escreva("=")
 		}
@@ -475,6 +483,10 @@ programa
 		
 		}
 	}
+
+
+
+
 	funcao Maquiagem(){
 		inteiro num, qtd, j
 		real auxmaquiagem, total=0
@@ -615,8 +627,15 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
+
  * @POSICAO-CURSOR = 10433; 
  * @DOBRAMENTO-CODIGO = [8, 12, 34, 57, 83, 87, 94, 115, 124, 150, 155, 178, 176, 187, 213, 345, 477];
+
+
+ * @POSICAO-CURSOR = 13763; 
+ * @DOBRAMENTO-CODIGO = [9, 142, 413, 435, 458, 477, 482, 490, 512, 524, 543, 549, 570];
+
+ * @POSICAO-CURSOR = 234; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
