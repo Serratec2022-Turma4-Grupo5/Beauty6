@@ -227,7 +227,6 @@ programa
 		escreva("[3] Antitranspirante Aerossol Aloe Vera 150mL (R$ 20.99)\n")
 		escreva("[4] Hidratante corporal Flores do Caribe 250 mL (R$ 56.90)\n")
 		escreva("[5] Body Splash Pós-Banho Lavanda da Grécia 200 mL (R$ 75.00)\n")
-
 		para(j = 0; j < 40; j++){
 			escreva("=")
 		}
@@ -352,6 +351,11 @@ programa
 		real auxcabelo, total=0
 		logico bool = verdadeiro
 		caracter esc, duvida
+
+		
+	
+
+
 		
 		escreva("========================CABELO===========================\n")
 		escreva("\nLinha DevS Professionals para Cabelos - Ultra Hidronutrição para Cabelos Danificados\n")
@@ -479,6 +483,9 @@ programa
 		
 		}
 	}
+
+
+
 
 	funcao Maquiagem(){
 		inteiro num, qtd, j
@@ -621,12 +628,16 @@ programa
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
 
+ * @POSICAO-CURSOR = 10433; 
+ * @DOBRAMENTO-CODIGO = [8, 12, 34, 57, 83, 87, 94, 115, 124, 150, 155, 178, 176, 187, 213, 345, 477];
+
+
  * @POSICAO-CURSOR = 13763; 
  * @DOBRAMENTO-CODIGO = [9, 142, 413, 435, 458, 477, 482, 490, 512, 524, 543, 549, 570];
 
  * @POSICAO-CURSOR = 234; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {auxmaquiagem, 216, 7, 12}-{auxcabelo, 294, 7, 9};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
