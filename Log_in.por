@@ -3,215 +3,13 @@ programa
 	inclua biblioteca Util
 	cadeia loguin[] = {"adminMaster","Charlles", "Flavio", "Isabel", "Rosana", "Gabriel", "Vinicius"},
 		   senha[] = {"adminMaster","#2019@", "valeu", "123", "#abc123#", "backend", "drunk"}, log, passw
-
-	cadeia usuarios[] = {"André", "João", "Marcos"}
 	inteiro continuar, resp, i, sair
 
-	funcao Perfumaria(){
-		inteiro num, qtd, j
-		real auxperfumaria, total=0.0
-		logico bool = verdadeiro
-		caracter esc
-		
-		escreva("==========PERFUMARIA==========\n")
-		escreva("[1] - Sabonete R$ 5.00\n")
-		escreva("[2] - Desodorante R$ 3.00\n")
-		escreva("[3] - Hidratante R$ 2.50\n")
-		escreva("[4] - Sabonete líquido R$ 3.50\n")
-		escreva("[5] - Perfume R$ 4.50\n")
-
-		para(j = 0; j < 30; j++){
-			escreva("=")
-		}
-		 escreva("\n")
-
-		enquanto(bool){
-			
-		
-		escreva("Entre com o número do item: ")
-		leia(num)
-
-		escolha(num){
-		caso 1:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 5.00)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso 2:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 3.00)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso 3:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 2.50)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso 4:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 3.50)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso 5:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxperfumaria = (qtd * 4.50)
-             escreva("Total da compra: ", auxperfumaria)
-          pare
-          caso contrario:
-                    escreva("Opção inválida")   
-		 }
-		escreva("\nDeseja continuar comprando? Digite: ")
-		escreva("[S] Sim 	[N] Não\n")
-		leia(esc)
-		se(esc=='N'){
-			bool = falso
-		}
-	 }
-	}
-
-	funcao Cabelo(){
-		inteiro num, qtd, j
-		real auxcabelo, total=0
-		logico bool = verdadeiro
-		caracter esc
-		
-		escreva("=============CABELO=============\n")
-		escreva("[1] - Shampoo R$ 5.00\n")
-		escreva("[2] - Condicionador R$ 3.00\n")
-		escreva("[3] - Creme de pentear R$ 2.50\n")
-		escreva("[4] - Creme de hidratação R$ 3.50\n")
-		escreva("[5] - Óleo capilar R$ 4.50\n")
-
-		para(j = 0; j < 32; j++){
-			escreva("=")
-		}
-		 escreva("\n")
-
-		enquanto(bool){
-		escreva("Entre com o número do item: ")
-		leia(num)
-
-		escolha(num){
-		caso 1:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 5.00)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso 2:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 3.00)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso 3:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 2.50)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso 4:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 3.50)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso 5:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxcabelo = (qtd * 4.50)
-             escreva("Total da compra: ", auxcabelo)
-          pare
-          caso contrario:
-                    escreva("Opção inválida")   
-		 }
-		escreva("\nDeseja continuar comprando? Digite: ")
-		escreva("[S] Sim 	[N] Não\n")
-		leia(esc)
-		se(esc=='N'){
-			bool = falso
-			}
-		
-		}
-	}
-
-	funcao Maquiagem(){
-		inteiro num, qtd, j
-		real auxmaquiagem, total=0
-		logico bool = verdadeiro
-		caracter esc
-		
-		escreva("=========MAQUIAGEM==========\n")
-		escreva("[1] - Corretivo R$ 5.00\n")
-		escreva("[2] - Base R$ 3.00\n")
-		escreva("[3] - Batom R$ 2.50\n")
-		escreva("[4] - Rímel R$ 3.50\n")
-		escreva("[5] - Lápis de olho R$ 4.50\n")
-
-		para(j = 0; j < 28; j++){
-			escreva("=")
-		}
-		 escreva("\n")
-
-		enquanto(bool){
-
-		escreva("Entre com o número do item: ")
-		leia(num)
-			
-		escolha(num){
-		caso 1:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 5.00)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso 2:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 3.00)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso 3:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 2.50)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso 4:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 3.50)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso 5:
-		   escreva("Entre com a quantidade do item: ")
-		   leia(qtd)
-             auxmaquiagem = (qtd * 4.50)
-             escreva("Total da compra: ", total+=auxmaquiagem)
-          pare
-          caso contrario:
-                    escreva("Opção inválida")   
-		}
-		escreva("\nDeseja continuar comprando? Digite: ")
-		escreva("[S] Sim 	[N] Não\n")
-		leia(esc)
-		se(esc=='N' ou esc=='n'){
-			bool = falso
-			}
-		}
-	}
 	
 	funcao inicio()
 	{
-		menu()
-		
+		bem_vindo_b6()	
 	}
-	
 	funcao log_in()
 	{
 		limpa()
@@ -238,14 +36,14 @@ programa
 			escreva("\t\t\t\t\t\t")escreva(" ! USUÁRIO OU SENHA INCORRETOS !")escreva("\n\n")
 			escreva("\t\t\t\t\t\t\t")escreva("TENTAR NOVAMENTE?")escreva("\n\n")
 			escreva("\t\t\t\t\t\t\t")escreva("[1]Sim")escreva("\t") escreva("     [2]Não")escreva("\n\n")
-			escreva("\t\t\t\t\t\t\t\t ")leia(resp)
+			escreva("\t\t\t\t\t\t\t      --> ")leia(resp)
 			limpa()
 			escolha(resp)
 			{
 				caso 1: log_in()
 				pare
 
-				caso 2: menu()
+				caso 2: bem_vindo_b6()
 				pare
 
 				caso contrario: 
@@ -260,27 +58,33 @@ programa
 	funcao in_log()
 	{
 		limpa()
+		inteiro acessar
 		escreva("\t\t\t\t\t\t\t Olá, " + loguin[i]+"!")escreva("\n\n")	
 		escreva("\t\t\t\t\t\t\tDeseja acessar a loja?\n\n")
 		escreva("\t\t\t")escreva("\t\t\t\t[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
-		inteiro num
 		escreva("\t\t\t\t\t\t\t\t--> ")
-		leia(num)
+		leia(acessar)
 		limpa()
-		escolha(num){
+		escolha(acessar){
 			caso 1: loja()
-				pare
-			caso 2: termino()
-				pare
+			pare
 			
+			caso 2: termino()
+			pare
+				
+			caso contrario: enquanto (acessar !=1 ou acessar !=2)
+			{
+				limpa()
+				escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+				Util.aguarde(1000)
+				in_log()
+			}
 		}
 	}
-
 	funcao termino(){
-		escreva("Obrigado por acessar nosso sistema!!\n")
-		escreva("Volte sempre!")
+		escreva("Obrigado por acessar o sistema Beauty6!!\n")
+		escreva("Volte sempre!\n\n\n")
 	}
-
 	funcao in_log_master()
 	{
 		escreva("\t\t\t\t\t")escreva("! VOCÊ ESTÁ LOGADO COMO ADMINISTRADOR !")escreva("\n\n")
@@ -288,66 +92,67 @@ programa
 		escreva("\t\t\t\t\t\t")escreva("   O que deseja fazer?")escreva("\n\n")
 		adm()
 	}
-
-	funcao menu(){
+	funcao bem_vindo_b6(){
 		escreva("\t\t\t\t\t\t")escreva("Bem vindo(a) a Beauty6™!")escreva("\n\n")
-		Util.aguarde(2500)
+		Util.aguarde(1500)
 		escreva("\t\t\t\t\t")escreva("   Deseja continuar e efetuar o login?")escreva("\n\n")
 		escreva("\t\t\t\t\t\t")escreva("[1] Sim")escreva("\t\t")escreva("[2] Não")escreva("\n")
-		escreva("\t\t\t\t\t\t\t   ")
-		leia(continuar)
+		escreva("\t\t\t\t\t\t\t--> ")leia(continuar)
 		escolha(continuar)
 		{
 			caso 1: log_in()
 			pare
 
 			caso 2: 
-			escreva ("\n\t\t\t\t\t\tQue pena! Volte sempre!")
-			// aqui poderia entrar a logo novamente 
+			limpa()
+			escreva ("\n\t\t\t\t\t\tQue pena! Volte sempre!")escreva("\n")
+
 			pare
 
-			caso contrario:
+			caso contrario: erro_bem_vindo_beauty6()
 			
 		}
 	}
-
 	funcao loja(){
 		escreva ("Olá, " + loguin[i]+"!\n")
-		escreva("\t\t\t\t\t")escreva("Deseja acessar os setores de Maquiagem, Perfumaria ou Cabelo? ")escreva("\n")
-		Util.aguarde(2500)
-		escreva("\t\t\t\t\t")escreva(" ")escreva("\n")
-		escreva("\t")escreva("\t\t\t  [1] Maquiagens")escreva("\t\t")escreva("[2] Perfumaria")escreva("\t\t [3] Tratamento de Cabelo")escreva("\n")
-		escreva("\t\t\t\t\t\t\t   ")
-		opcao_sair()
-		escolhaLoja()
-		limpa()
+		escreva("[0] para sair.")
+		escreva("\t\t\t\t")escreva("Qual setor você deseja acessar: Maquiagem, Perfumaria ou Cabelo? ")escreva("\n")
+		Util.aguarde(1000)
+		escreva("\t\t\t\t\t ")escreva("\n")
+		escreva("\t\t\t\t  [1] Maquiagens")escreva("\t\t")escreva("[2] Perfumaria")escreva("\t\t [3] Tratamento de Cabelo")
+		escolhaLoja()		
 	}
-
 	funcao escolhaLoja(){
 		inteiro continue
-		leia(continue)
+		escreva("\n\n")escreva("\t\t\t\t\t\t\t       -->  ")leia(continue)
 		escolha(continue)
 		{
-			caso 1: Maquiagem()
+			caso 0: limpa() termino_ou_log_in() 
 			pare
-
-			caso 2: Perfumaria()
-			pare
-
-			caso 3: Cabelo()
-			pare
-
-			caso contrario: menu()
 			
+			caso 1: limpa()  Maquiagem() 
+			pare
+
+			caso 2: limpa()  Perfumaria() 
+			pare
+
+			caso 3: limpa()  Cabelo() 
+			pare
+
+			caso contrario: 
+			enquanto(continue < 0 ou continue > 3)
+			{
+				limpa()
+				escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+				loja()				
+			}		
 		}
 	}
-	
-	funcao bem_vindo()
+	funcao logo_bem_vindo()
 	{
 	
 		
 	}
-
 	funcao adm()
 	{
 		inteiro opcao_adm
@@ -369,16 +174,268 @@ programa
 		}
 		
 	}
-	funcao opcao_sair(){
-		escreva("\n\n[0] Para sair da loja")escreva("\n\n")
-		leia (sair)
-		escolha(sair)
+	funcao erro_bem_vindo_beauty6()
+	{
+		enquanto (continuar >=3 ou continuar <=0)
 		{
-			caso 1: log_in()
-			pare
+			limpa()
+			escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+			Util.aguarde(1000)
+			bem_vindo_b6()
+			
 		}
-
 	}
+	funcao termino_ou_log_in()
+	{
+		limpa()
+		inteiro confirmar
+		escreva("\t\t\t\t\t")escreva(" Deseja sair do sitema ou voltar para a tela de login?  ")escreva("\n\n")
+		escreva("\t\t\t\t\t\t   ")escreva("[1] Sair \t\t [2] Login")escreva("\n\n")
+		escreva("\t\t\t\t\t\t\t     --> ")leia(confirmar)
+		escolha(confirmar)
+		{
+			caso 1: termino()
+			pare
+
+			caso 2: log_in()
+			pare
+
+			caso contrario: 
+			enquanto (confirmar != 1 ou confirmar != 2)
+			{
+				limpa()
+				escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+				Util.aguarde(1000)
+				termino_ou_log_in()
+			}
+		}
+		
+	}
+	funcao Maquiagem(){
+		inteiro num, qtd, j
+		real auxmaquiagem, total= 0.0
+		logico bool = verdadeiro
+		caracter esc
+
+		limpa()
+		escreva("Olá, " + loguin[i]+"!")escreva("\t\t\t\t")escreva("=========MAQUIAGEM==========\n")
+		escreva("[0] para sair.")escreva("\t\t\t\t")escreva("[1] - Corretivo R$ 5.00\n")
+		escreva("\t\t\t\t\t")escreva("[2] - Base R$ 3.00\n")
+		escreva("\t\t\t\t\t")escreva("[3] - Batom R$ 2.50\n")
+		escreva("\t\t\t\t\t")escreva("[4] - Rímel R$ 3.50\n")
+		escreva("\t\t\t\t\t")escreva("[5] - Lápis de olho R$ 4.50\n")
+		escreva("\t\t\t\t\t")
+		para(j = 0; j < 28; j++){
+			escreva("=")
+		}
+		 escreva("\n")
+
+		enquanto(bool){
+
+		escreva("\t\t\t\t\t")escreva("Entre com o número do item: ")
+		leia(num)
+			
+		escolha(num){
+		
+		caso 0: termino_ou_log_in()
+		pare
+		
+		caso 1:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxmaquiagem = (qtd * 5.00)
+             escreva("Total da compra: ", total+=auxmaquiagem)
+          pare
+          caso 2:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxmaquiagem = (qtd * 3.00)
+             escreva("Total da compra: ", total+=auxmaquiagem)
+          pare
+          caso 3:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxmaquiagem = (qtd * 2.50)
+             escreva("Total da compra: ", total+=auxmaquiagem)
+          pare
+          caso 4:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxmaquiagem = (qtd * 3.50)
+             escreva("Total da compra: ", total+=auxmaquiagem)
+          pare
+          caso 5:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxmaquiagem = (qtd * 4.50)
+             escreva("Total da compra: ", total+=auxmaquiagem)
+          pare
+          caso contrario:
+          enquanto (num < 0 ou num >5)
+			{
+				limpa()
+				escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+				Util.aguarde(1000)
+				Maquiagem()
+				
+			}
+            
+		}
+		escreva("\n\t\t\t\t\t")escreva("Deseja continuar comprando? Digite: ")
+		escreva("[S] Sim 	[N] Não")escreva("\t --> ")leia(esc)
+		
+		se(esc=='N' ou esc=='n'){
+			bool = falso
+			}
+		}
+	}
+	funcao Cabelo(){
+		inteiro num, qtd, j
+		real auxcabelo, total= 0.0
+		logico bool = verdadeiro
+		caracter esc
+
+		limpa()
+		escreva("Olá, " + loguin[i]+"!")escreva("\t\t\t\t")escreva("=============CABELO=============\n")
+		escreva("[0] para sair.")escreva("\t\t\t\t")escreva("[1] - Shampoo R$ 5.00\n")
+		escreva("\t\t\t\t\t")escreva("[2] - Condicionador R$ 3.00\n")
+		escreva("\t\t\t\t\t")escreva("[3] - Creme de pentear R$ 2.50\n")
+		escreva("\t\t\t\t\t")escreva("[4] - Creme de hidratação R$ 3.50\n")
+		escreva("\t\t\t\t\t")escreva("[5] - Óleo capilar R$ 4.50\n")
+		escreva("\t\t\t\t\t")
+		
+		para(j = 0; j < 32; j++){
+			escreva("=")
+		}
+		 escreva("\n")
+
+		enquanto(bool){
+		escreva("\t\t\t\t\t")escreva("Entre com o número do item: ")
+		leia(num)
+
+		escolha(num){
+		caso 1:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxcabelo = (qtd * 5.00)
+             escreva("Total da compra: ", total +=auxcabelo)
+          pare
+          caso 2:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxcabelo = (qtd * 3.00)
+             escreva("Total da compra: ", total +=auxcabelo)
+          pare
+          caso 3:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxcabelo = (qtd * 2.50)
+             escreva("Total da compra: ", total +=auxcabelo)
+          pare
+          caso 4:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxcabelo = (qtd * 3.50)
+             escreva("Total da compra: ", total +=auxcabelo)
+          pare
+          caso 5:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxcabelo = (qtd * 4.50)
+             escreva("Total da compra: ", total +=auxcabelo)
+          pare
+          caso contrario:
+                             enquanto (num < 0 ou num >5)
+			{
+				limpa()
+				escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+				Util.aguarde(1000)
+				Cabelo()
+				
+			}
+		 }
+		escreva("\n\t\t\t\t\t")escreva("Deseja continuar comprando? Digite: ")
+		escreva("[S] Sim 	[N] Não")escreva("\t --> ")leia(esc)
+		se(esc=='N'){
+			bool = falso
+			}
+		
+		}
+	}
+	funcao Perfumaria(){
+		inteiro num, qtd, j
+		real auxperfumaria, total=0.0
+		logico bool = verdadeiro
+		caracter esc
+
+		limpa()
+		escreva("Olá, " + loguin[i]+"!")escreva("\t\t\t\t")escreva("==========PERFUMARIA==========\n")
+		escreva("[0] para sair.")escreva("\t\t\t\t")escreva("[1] - Sabonete R$ 5.00\n")
+		escreva("\t\t\t\t\t")escreva("[2] - Desodorante R$ 3.00\n")
+		escreva("\t\t\t\t\t")escreva("[3] - Hidratante R$ 2.50\n")
+		escreva("\t\t\t\t\t")escreva("[4] - Sabonete líquido R$ 3.50\n")
+		escreva("\t\t\t\t\t")escreva("[5] - Perfume R$ 4.50\n")
+		escreva("\t\t\t\t\t")
+		
+		para(j = 0; j < 30; j++){
+			escreva("=")
+		}
+		 escreva("\n")
+
+		enquanto(bool){
+			
+		
+		escreva("\t\t\t\t\t")escreva("Entre com o número do item: ")
+		leia(num)
+
+		escolha(num){
+		caso 1:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxperfumaria = (qtd * 5.00)
+             escreva("Total da compra: ", total +=auxperfumaria)
+          pare
+          caso 2:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxperfumaria = (qtd * 3.00)
+             escreva("Total da compra: ", total +=auxperfumaria)
+          pare
+          caso 3:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxperfumaria = (qtd * 2.50)
+             escreva("Total da compra: ", total +=auxperfumaria)
+          pare
+          caso 4:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxperfumaria = (qtd * 3.50)
+             escreva("Total da compra: ", total +=auxperfumaria)
+          pare
+          caso 5:
+		   escreva("\t\t\t\t\t")escreva("Entre com a quantidade do item: ")
+		   leia(qtd)
+             escreva("\t\t\t\t\t")auxperfumaria = (qtd * 4.50)
+             escreva("Total da compra: ", total +=auxperfumaria)
+          pare
+          caso contrario:
+          enquanto (num < 0 ou num >5)
+			{
+				limpa()
+				escreva("\t\t\t\t\t")escreva(" OPS! ALGO DEU ERRADO! TENTE NOVAMENTE!  ")escreva("\n\n")
+				Util.aguarde(1000)
+				Perfumaria()				
+			}
+		 }
+		escreva("\n\t\t\t\t\t")escreva("Deseja continuar comprando? Digite: ")escreva("\n")
+		escreva("[S] Sim 	[N] Não")escreva("\t --> ")leia(esc)
+		se(esc=='N'){
+			bool = falso
+		}
+	 }
+	}
+
 }
 
 
@@ -388,10 +445,10 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 9332; 
- * @DOBRAMENTO-CODIGO = [9, 76, 142, 208, 214, 236, 259, 278, 283, 325, 344, 350];
+ * @POSICAO-CURSOR = 234; 
+ * @DOBRAMENTO-CODIGO = [8, 12, 34, 57, 83, 87, 94, 115, 124, 150, 155, 178, 176, 187, 213, 291, 364];
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {auxmaquiagem, 216, 7, 12}-{auxcabelo, 294, 7, 9};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
