@@ -6,7 +6,7 @@ Venha conhecer nossas seções de Maquiagem, Perfumaria e Tratamentos para Cabel
 
 
 
-<h2 align=center> Sobre nós </h2>
+<h3 align=center> Sobre nós </h3>
 <h3 align=center> Fundado dia 18 de março de 2022, a empresa Dev Six vem inovando os produtos de cosméticos do mercado. Produtos totalmente veganos, carbon-neutral, e não testados em animais. Nossa marca já patrocina pessoas como @martavsilva10, @amanda_leoa, @gabiguimaraes, @rayssalealsk8 e ajuda pessoas com projetos sociais a atingirem seus sonhos </h3>
 
 
@@ -18,3 +18,4 @@ Venha conhecer nossas seções de Maquiagem, Perfumaria e Tratamentos para Cabel
 <h3 align=center><a href=https://github.com/Charllesryam>  Charlles Ryam  </a></h3>
 <h3 align=center><a href=https://github.com/GabrielTheophilo>  Gabriel Theophilo  </a></h3>
 <h3 align=center><a href=https://github.com/KyuaKun>  Vinícius Soares  </a></h3>
+
