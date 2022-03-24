@@ -4,9 +4,30 @@ programa
 	cadeia loguin[] = {"adminMaster","admin1", "admin2", "admin3", "admin4", "admin5", "admin6"},
 		   senha[] = {"adminMaster","admin1", "admin2", "admin3", "admin4", "admin5", "admin6"}, log, passw
 
-	cadeia usuarios[] = {"André", "João", "Marcos"}
+	cadeia usuarios[] = {" ", " ", " "," ", " ", " ", " ", " "}
 	inteiro continuar, resp, i
 
+	funcao exclusaoUsuarios(inteiro m){
+		usuarios[m] = " "
+	}
+
+	funcao adicionaUsuarios(inteiro m, cadeia string){
+		usuarios[m] = string
+	}
+
+	funcao alteraUsuarios(inteiro m, cadeia string){
+		usuarios[m] = string
+	}
+
+	funcao escreveUsuarios(){
+		escreva(" 0\t\t1\t2\t3\t4\t5\t6\t7 \n")
+		
+		para(inteiro l=0;l<7;l++){
+			escreva(loguin[l])
+			escreva("\t")
+		}
+	}
+		
 	funcao Perfumaria(){
 		inteiro num, qtd, j
 		real auxperfumaria, total=0.0
@@ -350,19 +371,69 @@ programa
 		escreva("[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
 		escreva("[3] Adicionar um usuário novo;\n[4] Excluir um produto;\n")
 		escreva("[5] Alterar um produto;\n[6] Adicionar um produto novo.\n")
+		escreva("[7] Ver todos os usuários cadastrados")
 		leia (opcao_adm)
 		limpa()
 
-		enquanto(opcao_adm <1 ou opcao_adm > 6){
+		enquanto(opcao_adm <1 ou opcao_adm > 7){
 			escreva("Opção inválida. Escolha uma opção de 1 a 6.\n")
 			escreva("O que deseja fazer?\n\n")
 			escreva ("\n[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
 			escreva("[3] Adicionar um usuário novo;\n[4] Excluir um produto;\n")
 			escreva("[5] Alterar um produto;\n[6] Adicionar um produto novo.\n")
+			escreva("[7] Ver todos os usuários cadastrados")
 			leia (opcao_adm)
 			limpa()
 		}
-	}
+			escolha(opcao_adm){
+				caso 1:
+					//[1] Excluir um usuário existente;
+					inteiro f
+					escreva("Escolha qual usuário deseja excluir: \n")
+					escreveUsuarios()
+					leia(f)
+					exclusaoUsuarios(f)
+					pare
+				caso 2:
+					//[2] Alterar um usuário existente;
+					inteiro s
+					cadeia nomeAlt
+					escreva("Escolha qual usuário deseja alterar: \n")
+					escreveUsuarios()
+					leia(s)
+					escreva("Para qual nome gostaria de mudar: \n")
+					leia(nomeAlt)
+					alteraUsuarios(s, nomeAlt)
+					pare
+				caso 3:
+					//[3] Adicionar um usuário novo;
+					inteiro z
+					cadeia nomeAdd
+					escreva("Em qual posição o usuário estará? \n")
+					escreveUsuarios()
+					leia(z)
+					escreva("Qual nome gostaria de adicionar: \n")
+					leia(nomeAdd)
+					adicionaUsuarios(z, nomeAdd)
+					pare
+				caso 4:
+					//[4] Excluir um produto;
+				pare
+				caso 5:
+					//[5] Alterar um produto;
+				pare
+				caso 6:
+					//[6] Adicionar um produto novo;
+				pare
+				caso 7:
+					//[7] Ver todos os usuários cadastrados
+					
+					escreveUsuarios()
+				pare
+			}
+			
+		}
+	
 }
 
 	
@@ -371,13 +442,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
-<<<<<<< HEAD
- * @POSICAO-CURSOR = 6883; 
- * @DOBRAMENTO-CODIGO = [9, 236, 345];
-=======
- * @POSICAO-CURSOR = 7554; 
- * @DOBRAMENTO-CODIGO = [9, 208, 214, 236, 343];
->>>>>>> e4c0884396a3c9dcc57421168a19eaaf3932a511
+ * @POSICAO-CURSOR = 679; 
+ * @DOBRAMENTO-CODIGO = [9, 30, 97, 163, 229, 235, 257, 280, 299, 304, 312, 321, 330, 352, 349];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
