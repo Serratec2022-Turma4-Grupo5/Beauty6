@@ -211,136 +211,137 @@ programa
 		}
 		
 	}
-	funcao Maquiagem(){
+	funcao Perfumaria(){
 		inteiro num, qtd, j
-		real auxmaquiagem, total=0
+		real auxperfumaria, total=0.0
 		logico bool = verdadeiro
 		caracter esc, duvida
 		
-		escreva("=================MAQUIAGEM====================\n")
-		escreva("\nLinha DevS Professionals Makeup\n")
-		escreva("[1] Lápis de olho Pretão 1,5g (R$ 33.99) \n")
-		escreva("[2] Pó Iluminador Ilumina Geral 10g (R$ 79.99)\n")
-		escreva("[3] Rímel Extra Volume Sensacional 6g (R$ 49.99)\n")
-		escreva("[4] Paleta de Sombras 6 cores Tons Pasteis 24g (R$ 99.90)\n")
-		escreva("[5] Batom Líquido DevS Professionals Nude Matte 10mL (R$ 54.90)\n")
-
-		para(j = 0; j < 28; j++){
+		escreva("=============================PERFUMARIA======================================\n")
+		escreva("\nLinha DevS Professionals para Corpo e Banho - Essências de Extratos Naturais\n\n")
+		escreva("[1] Sabonete líquido Rosto e Corpo Flores do Mediterrâneo 300mL (R$ 31.99)\n")
+		escreva("[2] Sabonete em barra Esfoliante Flores da Amazônia 150g (R$ 55.99)\n")
+		escreva("[3] Antitranspirante Aerossol Aloe Vera 150mL (R$ 20.99)\n")
+		escreva("[4] Hidratante corporal Flores do Caribe 250 mL (R$ 56.90)\n")
+		escreva("[5] Body Splash Pós-Banho Lavanda da Grécia 200 mL (R$ 75.00)\n")
+		
+		para(j = 0; j < 40; j++){
 			escreva("=")
 		}
 		 escreva("\n")
 
 		enquanto(bool){
-
+			
+		
 		escreva("Entre com o número do item: ")
 		leia(num)
-			
+
 		escolha(num){
 		caso 1:
-			escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		   	leia (duvida)
+		   escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Lápis de olho preto. Possui alta pigmentação e durabilidade.")
-		   	escreva("\nQuantidade no estoque: 88")
+		   	escreva("Sabonete líquido à base de glicerina. \nPossui base vegetal, com extratos naturais do Mediterrâneo e uma fragrância duradoura e intensa.")
+		   	escreva("\nQuantidade no estoque: 89")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 33.99)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 31.99)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 33.99)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 31.99)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
           pare
           caso 2:
-		   escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		   	leia (duvida)
+           escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Pó iluminador mineral. Possui textura brilhante que deixa a pele linda e radiante.")
-		   	escreva("\nQuantidade no estoque: 133")
+		   	escreva("Kit com seis sabonetes em barra para todos os tipos de pele. \nLimpa, esfolia e hidrata a pele para deixar um toque sedoso ao longo do dia. \nCom extratos naturais da flores da Amazônia, a fragrância é suave e duradoura.")
+		   	escreva("\nQuantidade no estoque: 74")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 79.99)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 55.99)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 79.99)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 55.99)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
           pare
           caso 3:
-		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		   	leia (duvida)
+          escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Máscara para cílios preta. Alonga e aumenta o volume com fórmula de longa duração e à prova d´água.")
-		   	escreva("\nQuantidade no estoque: 113")
+		   	escreva("Desodorante antitranspirante aerossol unissex sem perfume. \nHidrata as axilas com o poder do extrato de Aloe Vera. Garante proteção por até 48h do mau odor e da transpiração. \nCom ação antibacteriana.")
+		   	escreva("\nQuantidade no estoque: 55")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 49.99)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 20.99)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 49.99)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 20.99)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
           pare
           caso 4:
-		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		   	leia (duvida)
+          	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		  	leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Paleta de sombras em pó. Possui acabamentos cintilante para um look poderoso.")
-		   	escreva("\nQuantidade no estoque: 111")
+		   	escreva("Com extratos naturais do Caribe, garante uma hidratação e proteção para o corpo com ação antirresecamento para uma pele macia e perfumada.")
+		   	escreva("\nQuantidade no estoque: 85")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 99.99)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 56.90)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 99.99)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 56.90)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
           pare
           caso 5:
-		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		   	leia (duvida)
+          	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		  	leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Batom líquido com acabamento matte. Possui alta intensidade, durabilidade de até 24h e poder hidratante.")
-		   	escreva("\nQuantidade no estoque: 103")
+		   	escreva("Com extratos naturais do Mar Egeu, possui notas suaves de Lavanda com um perfume duradouro e relaxante.")
+		   	escreva("\nQuantidade no estoque: 67")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 59.90)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 75.00)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxmaquiagem = (qtd * 59.90)
-               escreva("Total da compra: ", total+=auxmaquiagem)
+               auxperfumaria = (qtd * 75.00)
+               escreva("Total da compra: ", auxperfumaria)
 		   }
           pare
           caso contrario:
                     escreva("Opção inválida")   
-		}
+		 }
 		escreva("\nDeseja continuar comprando? Digite: ")
 		escreva("[S] Sim 	[N] Não\n")
 		leia(esc)
-		se(esc=='N' ou esc=='n'){
+		se(esc=='N'){
 			bool = falso
-			}
 		}
+	 }
 	}
 	funcao Cabelo(){
 		inteiro num, qtd, j
@@ -474,139 +475,137 @@ programa
 		
 		}
 	}
-	funcao Perfumaria(){
+	funcao Maquiagem(){
 		inteiro num, qtd, j
-		real auxperfumaria, total=0.0
+		real auxmaquiagem, total=0
 		logico bool = verdadeiro
 		caracter esc, duvida
 		
-		escreva("=============================PERFUMARIA======================================\n")
-		escreva("\nLinha DevS Professionals para Corpo e Banho - Essências de Extratos Naturais\n\n")
-		escreva("[1] Sabonete líquido Rosto e Corpo Flores do Mediterrâneo 300mL (R$ 31.99)\n")
-		escreva("[2] Sabonete em barra Esfoliante Flores da Amazônia 150g (R$ 55.99)\n")
-		escreva("[3] Antitranspirante Aerossol Aloe Vera 150mL (R$ 20.99)\n")
-		escreva("[4] Hidratante corporal Flores do Caribe 250 mL (R$ 56.90)\n")
-		escreva("[5] Body Splash Pós-Banho Lavanda da Grécia 200 mL (R$ 75.00)\n")
-		
-		para(j = 0; j < 40; j++){
+		escreva("=================MAQUIAGEM====================\n")
+		escreva("\nLinha DevS Professionals Makeup\n")
+		escreva("[1] Lápis de olho Pretão 1,5g (R$ 33.99) \n")
+		escreva("[2] Pó Iluminador Ilumina Geral 10g (R$ 79.99)\n")
+		escreva("[3] Rímel Extra Volume Sensacional 6g (R$ 49.99)\n")
+		escreva("[4] Paleta de Sombras 6 cores Tons Pasteis 24g (R$ 99.90)\n")
+		escreva("[5] Batom Líquido DevS Professionals Nude Matte 10mL (R$ 54.90)\n")
+
+		para(j = 0; j < 28; j++){
 			escreva("=")
 		}
 		 escreva("\n")
 
 		enquanto(bool){
-			
-		
+
 		escreva("Entre com o número do item: ")
 		leia(num)
-
+			
 		escolha(num){
 		caso 1:
-		   escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		   leia (duvida)
+			escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Sabonete líquido à base de glicerina. \nPossui base vegetal, com extratos naturais do Mediterrâneo e uma fragrância duradoura e intensa.")
-		   	escreva("\nQuantidade no estoque: 89")
+		   	escreva("Lápis de olho preto. Possui alta pigmentação e durabilidade.")
+		   	escreva("\nQuantidade no estoque: 88")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 31.99)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 33.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 31.99)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 33.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
           pare
           caso 2:
-           escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		   leia (duvida)
+		   escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Kit com seis sabonetes em barra para todos os tipos de pele. \nLimpa, esfolia e hidrata a pele para deixar um toque sedoso ao longo do dia. \nCom extratos naturais da flores da Amazônia, a fragrância é suave e duradoura.")
-		   	escreva("\nQuantidade no estoque: 74")
+		   	escreva("Pó iluminador mineral. Possui textura brilhante que deixa a pele linda e radiante.")
+		   	escreva("\nQuantidade no estoque: 133")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 55.99)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 79.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 55.99)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 79.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
           pare
           caso 3:
-          escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		   leia (duvida)
+		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Desodorante antitranspirante aerossol unissex sem perfume. \nHidrata as axilas com o poder do extrato de Aloe Vera. Garante proteção por até 48h do mau odor e da transpiração. \nCom ação antibacteriana.")
-		   	escreva("\nQuantidade no estoque: 55")
+		   	escreva("Máscara para cílios preta. Alonga e aumenta o volume com fórmula de longa duração e à prova d´água.")
+		   	escreva("\nQuantidade no estoque: 113")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 20.99)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 49.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 20.99)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 49.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
           pare
           caso 4:
-          	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		  	leia (duvida)
+		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Com extratos naturais do Caribe, garante uma hidratação e proteção para o corpo com ação antirresecamento para uma pele macia e perfumada.")
-		   	escreva("\nQuantidade no estoque: 85")
+		   	escreva("Paleta de sombras em pó. Possui acabamentos cintilante para um look poderoso.")
+		   	escreva("\nQuantidade no estoque: 111")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 56.90)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 99.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 56.90)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 99.99)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
           pare
           caso 5:
-          	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
-		  	leia (duvida)
+		   	escreva("Está em dúvida? Deseja conhecer mais o produto? Digite [s] Sim ou [n] Não ----> ")
+		   	leia (duvida)
 		   se (duvida == 's')
 		   {
-		   	escreva("Com extratos naturais do Mar Egeu, possui notas suaves de Lavanda com um perfume duradouro e relaxante.")
-		   	escreva("\nQuantidade no estoque: 67")
+		   	escreva("Batom líquido com acabamento matte. Possui alta intensidade, durabilidade de até 24h e poder hidratante.")
+		   	escreva("\nQuantidade no estoque: 103")
 		   	escreva("\nEntre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 75.00)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 59.90)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
 		   senao {
 		   	escreva("Entre com a quantidade do item: ")
 		     leia(qtd)
-               auxperfumaria = (qtd * 75.00)
-               escreva("Total da compra: ", auxperfumaria)
+               auxmaquiagem = (qtd * 59.90)
+               escreva("Total da compra: ", total+=auxmaquiagem)
 		   }
           pare
           caso contrario:
                     escreva("Opção inválida")   
-		 }
+		}
 		escreva("\nDeseja continuar comprando? Digite: ")
 		escreva("[S] Sim 	[N] Não\n")
 		leia(esc)
-		se(esc=='N'){
+		se(esc=='N' ou esc=='n'){
 			bool = falso
+			}
 		}
-	 }
 	}
-
 }
 
 
@@ -616,8 +615,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 19557; 
- * @DOBRAMENTO-CODIGO = [8, 12, 34, 57, 83, 87, 94, 115, 124, 150, 155, 178, 176, 187, 213, 344, 476];
+ * @POSICAO-CURSOR = 10433; 
+ * @DOBRAMENTO-CODIGO = [8, 12, 34, 57, 83, 87, 94, 115, 124, 150, 155, 178, 176, 187, 213, 345, 477];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
