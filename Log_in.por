@@ -3,8 +3,39 @@ programa
 	inclua biblioteca Util
 	cadeia loguin[] = {"adminMaster","Charlles", "Flavio", "Isabel", "Rosana", "Gabriel", "Vinicius"},
 		   senha[] = {"adminMaster","#2019@", "valeu", "123", "#abc123#", "backend", "drunk"}, log, passw
+	cadeia usuarios[] = {" ", " ", " "," ", " ", " ", " ", " "}
 	inteiro continuar, resp, i, sair
-	
+
+
+	funcao exclusaoUsuarios(inteiro m){
+		loguin[m] = " "
+		senha[m] = " "
+	}
+
+	funcao adicionaUsuarios(inteiro m, cadeia string){
+		loguin[m] = string
+		senha[m] = string
+	}
+
+	funcao alteraUsuarios(inteiro m, cadeia string){
+		loguin[m] = string
+		senha[m] = string
+	}
+
+	funcao escreveUsuarios(){
+		escreva(" 0\t\t1\t2\t3\t4\t5\t6\t7 \n")
+		
+		para(inteiro l=0;l<7;l++){
+			escreva(loguin[l])
+			escreva("\t")
+		}
+		escreva("\n")
+		para(inteiro l=0;l<7;l++){
+			escreva(senha[l])
+			escreva("\t")
+		}
+	}
+
 	funcao inicio()
 	{
 		bem_vindo_b6()	
@@ -120,7 +151,6 @@ programa
 		escreva("\t")escreva("\t\t\t  [1] Maquiagem")escreva("\t\t")escreva("[2] Perfumaria")escreva("\t\t [3] Cabelo")escreva("\n")
 		escreva("\t\t\t\t\t\t\t   ")
 		escolhaLoja()
-		opcao_sair() //dando erro neste lugar do escopo.
 		limpa()
 
 
@@ -163,20 +193,67 @@ programa
 		escreva("[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
 		escreva("[3] Adicionar um usuário novo;\n[4] Excluir um produto;\n")
 		escreva("[5] Alterar um produto;\n[6] Adicionar um produto novo.\n")
+		escreva("[7] Ver todos os usuários cadastrados")
 		leia (opcao_adm)
 		limpa()
 
-		enquanto(opcao_adm <1 ou opcao_adm > 6){
+		enquanto(opcao_adm <1 ou opcao_adm > 7){
 			escreva("Opção inválida. Escolha uma opção de 1 a 6.\n")
 			escreva("O que deseja fazer?\n\n")
 			escreva ("\n[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
 			escreva("[3] Adicionar um usuário novo;\n[4] Excluir um produto;\n")
 			escreva("[5] Alterar um produto;\n[6] Adicionar um produto novo.\n")
+			escreva("[7] Ver todos os usuários cadastrados")
 			leia (opcao_adm)
 			limpa()
 		}
-		
-	}
+			escolha(opcao_adm){
+				caso 1:
+					//[1] Excluir um usuário existente;
+					inteiro f
+					escreva("Escolha qual usuário deseja excluir: \n")
+					escreveUsuarios()
+					leia(f)
+					exclusaoUsuarios(f)
+					pare
+				caso 2:
+					//[2] Alterar um usuário existente;
+					inteiro s
+					cadeia nomeAlt
+					escreva("Escolha qual usuário deseja alterar: \n")
+					escreveUsuarios()
+					leia(s)
+					escreva("Para qual nome gostaria de mudar: \n")
+					leia(nomeAlt)
+					alteraUsuarios(s, nomeAlt)
+					pare
+				caso 3:
+					//[3] Adicionar um usuário novo;
+					inteiro z
+					cadeia nomeAdd
+					escreva("Em qual posição o usuário estará? \n")
+					escreveUsuarios()
+					leia(z)
+					escreva("Qual nome gostaria de adicionar: \n")
+					leia(nomeAdd)
+					adicionaUsuarios(z, nomeAdd)
+					pare
+				caso 4:
+					//[4] Excluir um produto;
+				pare
+				caso 5:
+					//[5] Alterar um produto;
+				pare
+				caso 6:
+					//[6] Adicionar um produto novo;
+				pare
+				caso 7:
+					//[7] Ver todos os usuários cadastrados
+					escreveUsuarios()
+					pare
+			}
+			
+		}
 	funcao erro_bem_vindo_beauty6()
 	{
 		enquanto (continuar >=3 ou continuar <=0)
@@ -351,12 +428,6 @@ programa
 		real auxcabelo, total=0
 		logico bool = verdadeiro
 		caracter esc, duvida
-
-		
-	
-
-
-		
 		escreva("========================CABELO===========================\n")
 		escreva("\nLinha DevS Professionals para Cabelos - Ultra Hidronutrição para Cabelos Danificados\n")
 		escreva("[1] Shampoo Óleo de Argan 500 mL (R$ 48.99)\n")
@@ -483,8 +554,6 @@ programa
 		
 		}
 	}
-
-
 
 
 	funcao Maquiagem(){
@@ -618,7 +687,9 @@ programa
 			}
 		}
 	}
-}
+  
+ } 
+ 
 
 
 	
@@ -627,15 +698,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
-
- * @POSICAO-CURSOR = 10433; 
- * @DOBRAMENTO-CODIGO = [8, 12, 34, 57, 83, 87, 94, 115, 124, 150, 155, 178, 176, 187, 213, 345, 477];
-
-
- * @POSICAO-CURSOR = 13763; 
- * @DOBRAMENTO-CODIGO = [9, 142, 413, 435, 458, 477, 482, 490, 512, 524, 543, 549, 570];
-
- * @POSICAO-CURSOR = 234; 
+ * @POSICAO-CURSOR = 3894; 
+ * @DOBRAMENTO-CODIGO = [9, 14, 19, 24, 38, 42, 64, 87, 113, 117, 124, 157, 183, 188, 267, 293];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
