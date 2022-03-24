@@ -8,15 +8,18 @@ programa
 	inteiro continuar, resp, i
 
 	funcao exclusaoUsuarios(inteiro m){
-		usuarios[m] = " "
+		loguin[m] = " "
+		senha[m] = " "
 	}
 
 	funcao adicionaUsuarios(inteiro m, cadeia string){
-		usuarios[m] = string
+		loguin[m] = string
+		senha[m] = string
 	}
 
 	funcao alteraUsuarios(inteiro m, cadeia string){
-		usuarios[m] = string
+		loguin[m] = string
+		senha[m] = string
 	}
 
 	funcao escreveUsuarios(){
@@ -24,6 +27,11 @@ programa
 		
 		para(inteiro l=0;l<7;l++){
 			escreva(loguin[l])
+			escreva("\t")
+		}
+		escreva("\n")
+		para(inteiro l=0;l<7;l++){
+			escreva(senha[l])
 			escreva("\t")
 		}
 	}
@@ -427,9 +435,8 @@ programa
 				pare
 				caso 7:
 					//[7] Ver todos os usuários cadastrados
-					
 					escreveUsuarios()
-				pare
+					pare
 			}
 			
 		}
@@ -442,8 +449,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 679; 
- * @DOBRAMENTO-CODIGO = [9, 30, 97, 163, 229, 235, 257, 280, 299, 304, 312, 321, 330, 352, 349];
+ * @POSICAO-CURSOR = 586; 
+ * @DOBRAMENTO-CODIGO = [38, 105, 171, 237, 243, 265, 288, 307, 312, 320, 329, 338, 360, 357];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
