@@ -908,10 +908,26 @@ programa
  		se (saiir == 1)
  		{
  			limpa()
- 			escreva("bye bye!")
- 			Util.aguarde(4000)
+ 			cadeia ce[]={"▒","▒","▒","▒","▒","▒","▒","▒","▒","▒"}
+			para (inteiro x=0; x<10;x++){
+			escreva(" Emitindo Nota Fiscal!\n\n")
+			
+			escreva("Aguarde! Imprimindo nota fiscal...\n")
+			escreva(ce[0]+ce[1]+ce[2]+ce[3]+ce[4]+ce[5]+ce[6]+ce[7]+ce[8]+ce[9])
+			ce[x]="█"
+			Util.aguarde(500)
+			limpa()
+			
+			
+			}
+			escreva("\n\nImpressão finalizada")
+			limpa()
+			
+ 			Util.aguarde(10000)
  			limpa()
- 		}
+ 			escreva("\t\t\t\t\t\t")escreva("Obrigado por comprar na Beauty6™!")escreva("\n\n")
+ 		
+ 			}
  	
  	}
 
@@ -925,8 +941,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2310; 
- * @DOBRAMENTO-CODIGO = [92, 116, 143, 148, 156, 178, 191, 218, 343, 380, 542, 705];
+ * @POSICAO-CURSOR = 34719; 
+ * @DOBRAMENTO-CODIGO = [92, 116, 143, 148, 178, 191, 218, 246, 343, 341, 353, 380, 542, 705];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
