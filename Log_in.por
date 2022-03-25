@@ -12,27 +12,42 @@ programa
 		senha[m] = " "
 	}
 
-	funcao adicionaUsuarios(inteiro m, cadeia string){
+	funcao adicionaUsuarios(inteiro m, cadeia string, cadeia p){
 		loguin[m] = string
-		senha[m] = string
+		senha[m] = p
 	}
 
-	funcao alteraUsuarios(inteiro m, cadeia string){
+	funcao alteraUsuarios(inteiro m, cadeia string, cadeia p){
 		loguin[m] = string
-		senha[m] = string
+		senha[m] = p
 	}
 
 	funcao escreveUsuarios(){
-		escreva(" 0\t\t1\t2\t3\t4\t5\t6\t7 \n")
-		
-		para(inteiro l=0;l<7;l++){
-			escreva(loguin[l])
-			escreva("\t")
+		escreva(" 0\t\t1\t\t2\t\t3\t4\t\t5\t6\t7 \n")
+		para(inteiro i = 0; i<100;i++){
+			escreva("_")
 		}
 		escreva("\n")
 		para(inteiro l=0;l<7;l++){
-			escreva(senha[l])
+			se(l==2 ou l==4){
+				escreva(loguin[l])
+				escreva("\t\t")
+			}senao{
+			escreva(loguin[l])
 			escreva("\t")
+			}
+		}
+		escreva("\n")
+		para(inteiro l=0;l<7;l++){
+			se(l==1 ou l==2){
+				escreva(senha[l])
+				escreva("\t\t")
+			}
+			senao{
+				escreva(senha[l])
+				escreva("\t")
+			}
+			
 		}
 	}
 
@@ -222,67 +237,94 @@ programa
 		inteiro opcao_adm
 		
 		escreva("[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
-		escreva("[3] Adicionar um usuário novo;\n[4] Excluir um produto;\n")
-		escreva("[5] Alterar um produto;\n[6] Adicionar um produto novo.\n")
-		escreva("[7] Ver todos os usuários cadastrados")
+		escreva("[3] Adicionar um usuário novo;\n")
+		escreva("[4] Ver todos os usuários cadastrados;\n[5] Sair;\n")
 		leia (opcao_adm)
 		limpa()
-
-		enquanto(opcao_adm <1 ou opcao_adm > 7){
-			escreva("Opção inválida. Escolha uma opção de 1 a 6.\n")
+		enquanto(opcao_adm!=5){
+		enquanto(opcao_adm <1 ou opcao_adm > 5){
+			escreva("Opção inválida. Escolha uma opção de 1 a 4.\n")
 			escreva("O que deseja fazer?\n\n")
 			escreva ("\n[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
-			escreva("[3] Adicionar um usuário novo;\n[4] Excluir um produto;\n")
-			escreva("[5] Alterar um produto;\n[6] Adicionar um produto novo.\n")
-			escreva("[7] Ver todos os usuários cadastrados")
+			escreva("[3] Adicionar um usuário novo;\n[4] Ver todos os usuários cadastrados;")
+			escreva("\n[5] Sair;\n")
 			leia (opcao_adm)
 			limpa()
 		}
-			escolha(opcao_adm){
-				caso 1:
+			se(opcao_adm==1){
 					//[1] Excluir um usuário existente;
 					inteiro f
-					escreva("Escolha qual usuário deseja excluir: \n")
+					
 					escreveUsuarios()
+					escreva("\nEscolha qual usuário deseja excluir: \n")
 					leia(f)
 					exclusaoUsuarios(f)
-					pare
-				caso 2:
+					escreveUsuarios()
+					escreva("O que deseja fazer?\n\n")
+					escreva ("\n[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
+					escreva("[3] Adicionar um usuário novo;\n[4] Ver todos os usuários cadastrados;")
+					escreva("\n[5] Sair;\n")
+
+					leia(opcao_adm)
+					
+					
+			}
+			se(opcao_adm==2){
 					//[2] Alterar um usuário existente;
 					inteiro s
-					cadeia nomeAlt
-					escreva("Escolha qual usuário deseja alterar: \n")
+					cadeia nomeAlt, senhaAlt
+					
 					escreveUsuarios()
+					escreva("\nEscolha qual usuário deseja alterar: \n")
 					leia(s)
 					escreva("Para qual nome gostaria de mudar: \n")
 					leia(nomeAlt)
-					alteraUsuarios(s, nomeAlt)
-					pare
-				caso 3:
+					escreva("Qual é a senha do novo usuario: \n")
+					leia(senhaAlt)
+					alteraUsuarios(s, nomeAlt, senhaAlt)
+					escreva("\nO que deseja fazer?\n\n")
+					escreva ("\n[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
+					escreva("[3] Adicionar um usuário novo;\n[4] Ver todos os usuários cadastrados;")
+					escreva("\n[5] Sair;\n")
+					escreva("\n")
+					leia(opcao_adm)
+					
+			}
+			se(opcao_adm==3){
 					//[3] Adicionar um usuário novo;
 					inteiro z
-					cadeia nomeAdd
-					escreva("Em qual posição o usuário estará? \n")
+					cadeia nomeAdd, senhaAdd
+					
 					escreveUsuarios()
+					escreva("\nEm qual posição o usuário estará? \n")
 					leia(z)
 					escreva("Qual nome gostaria de adicionar: \n")
 					leia(nomeAdd)
-					adicionaUsuarios(z, nomeAdd)
-					pare
-				caso 4:
-					//[4] Excluir um produto;
-				pare
-				caso 5:
-					//[5] Alterar um produto;
-				pare
-				caso 6:
-					//[6] Adicionar um produto novo;
-				pare
-				caso 7:
+					escreva("Qual a senha do novo usuário: \n")
+					leia(senhaAdd)
+					adicionaUsuarios(z, nomeAdd, senhaAdd)
+					escreva("\nO que deseja fazer?\n\n")
+					escreva("O que deseja fazer?\n\n")
+					escreva ("\n[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
+					escreva("[3] Adicionar um usuário novo;\n[4] Ver todos os usuários cadastrados;")
+					escreva("\n[5] Sair;\n")
+					leia(opcao_adm)
+					
+			}
+			se(opcao_adm==4){
 					//[7] Ver todos os usuários cadastrados
 					escreveUsuarios()
-					pare
+					
+					escreva("\nO que deseja fazer?\n\n")
+					escreva("O que deseja fazer?\n\n")
+					escreva ("\n[1] Excluir um usuário existente;\n[2] Alterar um usuário existente;\n")
+					escreva("[3] Adicionar um usuário novo;\n[4] Ver todos os usuários cadastrados;")
+					escreva("\n[5] Sair;\n")
+					leia(opcao_adm)
 			}
+			
+			}
+			bem_vindo_b6()
 			
 		}
 	funcao erro_bem_vindo_beauty6()
@@ -729,8 +771,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2987; 
- * @DOBRAMENTO-CODIGO = [9, 14, 19, 24, 38, 42, 64, 87, 113, 188, 214, 219, 298, 324];
+ * @POSICAO-CURSOR = 1023; 
+ * @DOBRAMENTO-CODIGO = [9, 14, 53, 57, 79, 102, 128, 132, 140, 191, 203, 229, 329, 340, 366, 498, 631];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
