@@ -4,11 +4,7 @@ Seja muito bem vindo a nossa loja<br>
 Aqui você encontra a melhor marca com qualidade DevS Professionals<br>
 Venha conhecer nossas seções de Maquiagem, Perfumaria e Tratamentos para Cabelo</h2>
 
-\_________________________________________________________________________________________
-Espaço para logo
-\_________________________________________________________________________________________
-
-
+<img src="https://i.imgur.com/Viyd7yk.png?1">
 <h1 align=center> Sobre nós </h1>
 <h3 align=center> Fundado dia 18 de março de 2022, a empresa Dev Six vem inovando os produtos de cosméticos do mercado. Produtos totalmente veganos, carbon-neutral, e não testados em animais. Nossa marca já patrocina pessoas como @martavsilva10, @amanda_leoa, @gabiguimaraes, @rayssalealsk8 e ajuda pessoas com projetos sociais a atingirem seus sonhos </h3>
 
