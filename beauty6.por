@@ -33,12 +33,12 @@ programa
 	}
 
 	funcao escreveUsuarios(){
-		escreva(" 0\t\t1\t\t2\t\t3\t4\t\t5\t6\t7 \n")
+		escreva(" 0\t\t1\t\t2\t\t3\t4\t\t5\t6\t \n")
 		para(inteiro i = 0; i<100;i++){
 			escreva("_")
 		}
 		escreva("\n")
-		para(inteiro l=0;l<7;l++){
+		para(inteiro l=0;l<=6;l++){
 			se(l==2 ou l==4){
 				escreva(loguin[l])
 				escreva("\t\t")
@@ -48,7 +48,7 @@ programa
 			}
 		}
 		escreva("\n")
-		para(inteiro l=0;l<7;l++){
+		para(inteiro l=0;l<=6;l++){
 			se(l==1 ou l==2){
 				escreva(senha[l])
 				escreva("\t\t")
@@ -925,8 +925,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2088; 
- * @DOBRAMENTO-CODIGO = [19, 24, 29, 34, 69, 92, 116, 143, 148, 156, 178, 191, 218, 246, 343, 341, 353, 380, 542, 705, 895];
+ * @POSICAO-CURSOR = 2310; 
+ * @DOBRAMENTO-CODIGO = [92, 116, 143, 148, 156, 178, 191, 218, 343, 380, 542, 705];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
